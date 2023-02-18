@@ -7,6 +7,8 @@ const Home = () => {
                 <Row>
                     <Col>
                         <h2>{process.env.REACT_APP_URL}</h2>
+                        <h2>{process.env.REACT_APP_URL_SECOND}</h2>
+                        <h2>{process.env.REACT_APP_URL_THIRD}</h2>
                     </Col>
                     <Col>test</Col>
                 </Row>
