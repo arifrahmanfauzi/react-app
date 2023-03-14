@@ -1,16 +1,29 @@
 import {Button, Card, Container, Row, Col,} from "react-bootstrap";
+import {Notification} from "./Listener";
 
 const Home = () => {
+
     return (
         <div>
+            <Notification />
             <Container fluid>
-                <Row>
+                <Row className="bg-info">
                     <Col>
                         <h2>{process.env.REACT_APP_URL}</h2>
                         <h2>{process.env.REACT_APP_URL_SECOND}</h2>
                         <h2>{process.env.REACT_APP_URL_THIRD}</h2>
                     </Col>
                     <Col>test</Col>
+                </Row>
+                <Row className="bg-success">
+                    <Col>
+                        <p>{process.env.REACT_APP_URL}</p>
+                    </Col>
+                </Row>
+                <Row className="bg-secondary">
+                    <Col>
+                        <p>{process.env.REACT_APP_URL_THIRD}</p>
+                    </Col>
                 </Row>
             </Container>
             {/*<Container className="m-2">*/}
